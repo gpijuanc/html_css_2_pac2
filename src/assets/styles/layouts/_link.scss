@@ -1,0 +1,19 @@
+.header {
+    // Box model
+    padding: 0.5rem;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    
+    // Visual
+    background-color: $color-terciari;
+    background-image: linear-gradient(to right, $color-secundari, $color-terciari);  
+    border: 3px solid #fff;
+
+    &__a {
+        // Typography
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
