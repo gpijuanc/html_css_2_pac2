@@ -8,87 +8,21 @@
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <include src="./views/link.html"></include>
-    <nav class="nav">
-      <a class="nav__item" href="#inici">Inici</a> 
-      <a class="nav__item" href="#historia">Història</a> 
-      <a class="nav__item" href="#temps">Temps</a> 
-      <a class="nav__item" href="#fer">Coses a fer</a>
+
+    <nav class="navbar navbar-light bg-light justify-content-start">
+      <a class="navbar-brand" href="#">
+        <img src="/src/assets/images/logo-p2.png" width="30" height="30" alt="">
+      </a>
+      <a class="nav-link active" href="#front-page">Front Page</a>
+      <a class="nav-link" href="#page-two">Page Two</a>
+      <a class="nav-link" href="#page-three">Page Three</a>
+      <a class="nav-link" href="#page-four">Page Four</a>
     </nav>
 
-    <div class="div" id="inici">       
-      <h1 class="div__h1">Cairns</h1>
-      <div class="div__div">
-        <picture class="div__div__picture">
-        <source srcset="./assets/images/cairns.jpg" type="image/webp" />
-        <img src="./assets/images/cairns.jpg" alt="Cairns" class="div__div__picture__img"/>
-      </picture>
-      <p class="div__div__p">
-        Cairns és una ciutat costanera situada a la regió tropical del nord-est de Queensland, Austràlia. 
-        Fundada el 1876, va començar com un petit port de servei per als miners d'or que es dirigien cap 
-        a les regions interiors. El nom de Cairns va ser triat en honor a William Wellington Cairns, el 
-        governador de Queensland en aquella època. La seva ubicació estratègica prop de la Gran Barrera 
-        de Coral i la selva tropical de Daintree ha fet de Cairns un important centre turístic i un punt 
-        de partida per a exploradors i aventurers.
-      </p>
-      </div>      
-    </div>
-
-    <div class="div" id="historia">       
-      <h2 class="div__h2">
-        <i class="fas fa-landmark"></i>
-        Història</h2>
-      <p>
-        En els primers dies, Cairns es va desenvolupar com un port de carrega i un centre de serveis per 
-        als miners d'or de les regions interiors de Queensland. La construcció del ferrocarril de Cairns a 
-        Herberton a finals del segle XIX va afavorir el desenvolupament de la regió, ja que va facilitar el 
-        transport de la producció agrícola, principalment sucre, tabac i cafè, des dels valles interiors 
-        fins al port de Cairns.<br>
-        
-        Durant la Segona Guerra Mundial, Cairns va jugar un paper estratègic com a base militar i port 
-        d'embarcament per a les forces aliades a la regió del Pacífic.Després de la guerra, la ciutat 
-        es va expandir i es va diversificar, especialment amb l'augment del turisme i la creació de 
-        noves indústries com la pesca i el turisme marítim. <br>
-        
-        En les dècades posteriors, Cairns va experimentar un creixement significatiu, amb la construcció 
-        d'infraestructures turístiques com hotels, resorts i serveis d'aventura. Avui en dia, és un dels 
-        principals destins turístics de Queensland i un punt de partida ideal per explorar les meravelles 
-        naturals de la regió.
-      </p>
-    </div>
-
-    <div class="div" id="temps">       
-      <h2 class="div__h2">
-        <i class="fas fa-cloud-sun"></i>
-        Temps</h2>
-      <p>Cairns gaudeix d'un clima tropical, amb temperatures càlides durant tot l'any. Els mesos d'estiu 
-        (de desembre a febrer) solen ser calorosos i humits, amb temperatures que poden superar els 30 graus 
-        Celsius i amb possibilitat d'episodis de pluges intenses, típics de la temporada de monsons. Els 
-        mesos d'hivern (de juny a agost) són més frescos i secs, amb temperatures diürnes agradables al 
-        voltant dels 20-25 graus Celsius.
-
-        La millor època per visitar Cairns depèn de les preferències personals i de les activitats que es 
-        desitgin realitzar. Els mesos de tardor i primavera (de març a maig i de setembre a novembre) solen 
-        oferir temperatures moderades i condicions meteorològiques estables, fet que els fa ideals per a la 
-        pràctica d'activitats a l'aire lliure com el submarinisme, el snorkel o el senderisme.
-      </p>
-    </div>
-
-    <div class="div" id="fer">       
-      <h2 class="div__h2">
-        <i class="fas fa-fish"></i>
-        Coses a fer</h2>
-      <ol>
-        <li>Gran Barrera de Coral: Cairns és un punt d'accés popular per explorar la Gran Barrera de Coral, el sistema de corall més gran del món. Pots fer excursions de submarinisme, snorkel o simplement agafar un vaixell amb fons de vidre per observar la vida marina impressionant.</li>
-        <li>Parc Nacional de Daintree: Situat a prop de Cairns, el Parc Nacional de Daintree és una joia de la biodiversitat. És una de les zones de selva tropical més antigues del món i ofereix nombroses rutes de senderisme, així com la possibilitat de fer safaris per observar la vida silvestre, com els cocodrils d'aigua salada.</li>
-        <li>Kuranda: Aquesta petita localitat és accessible des de Cairns mitjançant el famós Kuranda Scenic Railway o en telefèric aèri, el Skyrail Rainforest Cableway. Kuranda ofereix artesanies locals, mercats d'artesans, parcs de vida silvestre i una visió fascinant de la selva tropical.</li>
-        <li>Tjapukai Aboriginal Cultural Park: Per aprendre sobre la rica història i cultura dels aborígens australians, pots visitar aquest parc cultural. Ofereix espectacles de danses tradicionals, demostracions de música i art, i experiències interactives per aprendre sobre les tradicions aborígens.</li>
-        <li>Esport aquàtic i aventura: A Cairns, hi ha moltes activitats emocionants per a aquells que busquen adrenalina, com ara rafting, kayak, paracaigudisme, tubing o fins i tot saltar en caiguda lliure en tàndem.</li>
-        <li>Escales d'Estación: Aquesta estructura icònica, coneguda com a "Escales a la lluna", és un dels punts de referència de Cairns. Es troba a la vora del mar i ofereix una gran vista panoràmica de la ciutat, el port i la costa.</li>
-        <li>Palm Cove: Situada a poca distància de Cairns, Palm Cove és una platja tranquil·la i relaxant amb resorts de luxe, restaurants i spas. És un lloc perfecte per relaxar-se i gaudir del sol i del mar.</li>
-        <li>Centres de conservació de la vida marina: A Cairns, hi ha diversos centres dedicats a la conservació de la vida marina, com el Marine World o el Cairns Aquarium, on pots aprendre sobre els ecosistemes locals i veure una gran varietat de peixos i coralls.</li>
-      </ol>
-    </div>
+    <include id="front-page" src="./views/front-page.html"></include>
+    <include id="page-two" src="./views/page-two.html"></include>
+    <include id="page-three" src="./views/page-three.html"></include>
+    <include id="page-four" src="./views/page-four.html"></include>
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->

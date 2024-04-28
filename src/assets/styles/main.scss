@@ -18,6 +18,7 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
+@import "bootstrap/scss/bootstrap";
 
 /**
  * Import layouts
@@ -25,7 +26,10 @@
  */
 
 @import "layouts/home";
-@import "layouts/link";
+@import "layouts/front-page";
+@import "layouts/page-two";
+@import "layouts/page-three";
+@import "layouts/page-four";
 
 /**
  * Do NOT include anything else in this file!
