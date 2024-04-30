@@ -1,0 +1,19 @@
+.page2 {
+    margin: 2rem;
+    
+    &__div{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem;
+    
+        &__div {
+            flex: 1 1 33%;
+            padding: 2rem;
+    
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}
+
