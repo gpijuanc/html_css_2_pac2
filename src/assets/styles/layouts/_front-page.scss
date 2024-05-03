@@ -1,58 +1,84 @@
 .grid {
-    display: grid;
-    grid-template-areas: 'a b c'
-                         'd e f';
-    grid-template-columns: calc(100vw / 2) calc(100vw / 4) calc(100vw / 4);
-    grid-template-rows: calc(100vh / 2) calc(100vh / 2);
+    display: flex;
+    flex-wrap: wrap;
     height: calc(100vh - 65px - 65px);
 
     .grid-item__a { 
-        grid-area: a;
-        width: calc(100vw / 1.5);
+        width: 100%;
         max-height: 100vh;
-     }
+    }
 
     .grid-item__b { 
-        grid-area: b;
+        position: absolute;
         align-self: center;
         font-size: 60px;
         font-weight: bold;
-        width: calc(100vw / 2);
+        width: 100%;
         color: rgba(255, 255, 255, 0.5);
         text-transform: uppercase;
-    }
-
-    .grid-item__c { 
-        grid-area: c;
-     }
-
-    .grid-item__d { 
-        grid-area: d;
-        align-content: center;
-        color: $color-cinc;
-        padding: 2%;
-    }
-
-    .grid-item__e { 
-        grid-area: e;
-        background-color: $color-terciari;
-        width: calc(100vw / 3);
-        height: 50%;
-        margin-top: 25%;
         text-align: center;
-
-        &__blockquote{
-            margin-top: 7%;
-        }
     }
 
-    .grid-item__f { 
-        grid-area: f;
-        writing-mode: vertical-rl;
-        align-content: start;
-        color: $color-cinc;
+    .grid-item__c, .grid-item__d, .grid-item__e, .grid-item__f { 
+        display: none;
      }
 
   }
-  
-  
+
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+        grid-template-areas: 'a b c'
+                             'd e f';
+        grid-template-columns: calc(100vw / 2) calc(100vw / 4) calc(100vw / 4);
+        grid-template-rows: calc(100vh / 2) calc(100vh / 2);
+    
+        .grid-item__a { 
+            grid-area: a;
+            width: calc(100vw / 1.5);
+         }
+    
+        .grid-item__b { 
+            grid-area: b;
+            position: relative;
+            width: calc(100vw / 2);
+        }
+    
+        .grid-item__c { 
+            grid-area: c;
+            display: grid;
+         }
+    
+        .grid-item__d { 
+            grid-area: d;
+            display: grid;
+            align-content: center;
+            color: $color-cinc;
+            padding: 2%;
+        }
+    
+        .grid-item__e { 
+            grid-area: e;
+            display: grid;
+            background-color: $color-terciari;
+            width: calc(100vw / 3);
+            height: 50%;
+            margin-top: 25%;
+            text-align: center;
+    
+            &__blockquote{
+                margin-top: 7%;
+            }
+        }
+    
+        .grid-item__f { 
+            grid-area: f;
+            display: grid;
+            writing-mode: vertical-rl;
+            align-content: start;
+            color: $color-cinc;
+         }
+      }    
+}
+

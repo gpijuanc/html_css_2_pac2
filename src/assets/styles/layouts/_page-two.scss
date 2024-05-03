@@ -1,10 +1,10 @@
 .page2 {
-    margin: 2rem;
     
     &__div{
         display: flex;
         flex-wrap: wrap;
         margin: 2rem;
+        margin-bottom: 65px;
     
         &__div {
             flex: 1 1 30%;
