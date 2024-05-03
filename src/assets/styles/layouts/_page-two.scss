@@ -7,12 +7,9 @@
         margin: 2rem;
     
         &__div {
-            flex: 1 1 33%;
+            flex: 1 1 30%;
             padding: 2rem;
-    
-            &__img {
-                width: 100%;
-            }
+            margin: 1%;
         }
     }
 }
