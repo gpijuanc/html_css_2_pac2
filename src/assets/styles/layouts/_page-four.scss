@@ -1,0 +1,17 @@
+.page4 {
+    margin-top: 56px;
+    padding: 2%;
+    height: calc(100vh - 56px - 56px);
+
+    .form-group {
+        margin-top: 2%;
+
+        input {
+            background-color: $color-display-p3;
+        }
+    
+        select, textarea {
+            background-color: $color-hwb
+        }
+    }    
+}

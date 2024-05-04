@@ -9,44 +9,60 @@
   </head>
   <body>
     <include src="./views/navbar.html"></include>
-    <div class="card page3">
+    <div class="page3 bg-light">
         <article>
-            <h2>Torna el Concurs Anual de Truites de Catalunya a la Plaça Major</h2>
-
+            <h2 class="text-center">Torna el Concurs Anual de Truites de Catalunya a la Plaça Major</h2>
+    
             <p>
                 El cor de la Plaça Major serà l'escenari d'un dels esdeveniments més esperats pels amants de la gastronomia catalana: el <b>Concurs Anual de Truites de Catalunya</b>. 
                 Aquest any, la cita es realitzarà el proper <b>dissabte 20 de maig</b>, a partir de les 10 del matí, amb la participació de xefs amateurs i professionals de tota la regió.
                 Durant aquesta jornada, els participants competiran per demostrar la seva habilitat en la creació de la millor truita, un plat icònic de la cuina catalana. 
             </p> 
-            
-            <blockquote cite="https://guia.barcelona.cat/es/detall/concurs-de-truites_99400728106.html">“La truita és més que un simple plat, és una tradició i una forma d'expressió cultural que passa de generació en generació”</blockquote>
-            
-            <p> Afirma Marta Casas, presidenta de l'Associació Gastronòmica de Catalunya, organitzadora de l'esdeveniment.</p>
-            
-            <figure>
-                <img src="/src/assets/images/placa.jpg" alt="">
-                <figcaption>Plaça Major</figcaption>
+    
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>“La truita és més que un simple plat, és una tradició i una forma d'expressió cultural que passa de generació en generació”</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Afirma <cite title="Source Title">Marta Casas</cite>, presidenta de l'Associació Gastronòmica de Catalunya, organitzadora de l'esdeveniment.
+                </figcaption>
             </figure>
-
+                        
+            <figure>
+                <img class="img-fluid" src="/src/assets/images/placa.jpg" alt="">
+                <figcaption class="blockquote-footer text-end">Plaça Major</figcaption>
+            </figure>
+    
+            <hr>
+    
             <p>El concurs es divideix en diverses categories, incloent:</p>
             
-            <ul>
-                <li><b>Truita Tradicional:</b> Valora la tècnica i el gust en la versió clàssica de truita de patates.</li>
-                <li><b>Truita Innovadora:</b> Premia la creativitat en la fusió de sabors i ingredients inusuals.</li>
-                <li><b>Truita Local:</b> Destaca les truites fetes amb productes 100% locals.</li>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-light"><b>Truita Tradicional:</b> Valora la tècnica i el gust en la versió clàssica de truita de patates.</li>
+                <li class="list-group-item bg-light"><b>Truita Innovadora:</b> Premia la creativitat en la fusió de sabors i ingredients inusuals.</li>
+                <li class="list-group-item bg-light"><b>Truita Local:</b> Destaca les truites fetes amb productes 100% locals.</li>
             </ul>
+            
+            <hr>
             
             <p>
                 Els guanyadors de cada categoria rebran premis proporcionats pels patrocinadors locals, incloent vals de compra en botigues gastronòmiques, cursos de cuina i, 
-                per descomptat, trofeus. Sergi López, un dels xefs participants, comenta:
+                per descomptat, trofeus. 
             </p>
-                
-            <blockquote>“El més important per a nosaltres és fomentar l'amor per la cuina i la passió per compartir”</blockquote>
-            
-            <figure>
-                <img src="/src/assets/images/truita2.jpg" alt="">
+    
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>“El més important per a nosaltres és fomentar l'amor per la cuina i la passió per compartir”</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Comenta <cite title="Source Title">Sergi López</cite>, un dels xefs participants.
+                </figcaption>
             </figure>
-
+                            
+            <figure>
+                <img class="img-fluid" src="/src/assets/images/truita2.jpg" alt="">
+            </figure>
+    
             <p>
                 L'esperit comunitari serà palpable, amb estands de menjar i beguda que permetran als visitants gaudir de l'ambient festiu mentre degusten diferents tipus 
                 de truites i altres delícies locals. A més, l'esdeveniment comptarà amb <b>música en viu i activitats</b> per als més petits, convertint-lo en una festa per a 
@@ -59,9 +75,7 @@
                 imprescindible.
             </p>
         </article>
-
-        
-        
     </div>
+    
     <include src="./views/footer.html"></include>
   </body>
