@@ -1,5 +1,6 @@
 .page2 {
-    
+    container-type: inline-size;
+
     &__div{
         display: flex;
         flex-wrap: wrap;
@@ -10,19 +11,16 @@
             flex: 1 1 30%;
             padding: 1.5rem;
             margin: 1%;
-        }
-    }
 
-    @media (max-width: $mqMidWidth) {
-        &__div__div {
-            flex: 1 1 35%;
-        }
-    }
-    
-    @media (max-width: $mqMinWidth) {
-        &__div__div {
-            flex: 1 1 50%;
+            @container (max-width: 700px) {
+                flex: 1 1 35%;
+            }
+
+            @container (max-width: 500px) {
+                flex: 1 1 50%;
+            }
         }
     }
 }
+      
 

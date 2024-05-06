@@ -1,7 +1,18 @@
 .page3 {
+    container-type: inline-size;
+
     article {
         display: block;
         margin: 65px 5%;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            
+            @container (max-width: 400px) {
+                font-weight: 500;
+            }
+        }
     
         figure:has(figcaption) img {
             width: 100%;
