@@ -74,6 +74,36 @@
             align-content: start;
             color: $color-cinc;
          }
-      }    
+      } 
+      
+      @media (max-width: $mqMidWidth) { 
+        .grid {
+            margin-top: 56px;
+            .grid-item__a { 
+                width: 100vw;
+            }
+        
+            .grid-item__b { 
+                position: absolute;
+                align-self: center;
+                font-size: 30px;
+                font-weight: bold;
+                width: 100%;
+                color: rgba(255, 255, 255, 0.5);
+                text-transform: uppercase;
+                text-align: center;
+            }
+    
+            .grid-item__d { 
+                width: 100%;
+            }
+    
+            .grid-item__e { 
+                width: calc(100vw / 2.1);
+            }
+    
+        }
+    }
 }
+
 
