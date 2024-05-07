@@ -1,37 +1,46 @@
-.page3 {
-    container-type: inline-size;
+@layer base, layout;
 
-    article {
-        display: block;
-        margin: 65px 5%;
+@layer base {   
+    :where(p, li) > b {
+        color: orange;
+    }
+}
 
-        h2 {
-            text-transform: uppercase;
+@layer layout {
+    .page3 {
+        container-type: inline-size;
+    
+        &__article {
+            display: block;
+            margin: 65px 5%;
+        }
+    
+        &__heading {
             font-weight: 700;
+            text-transform: uppercase;
             
-            @container (max-width: 400px) {
+            @container (max-width: 500px) {
                 font-weight: 500;
             }
         }
-    
-        figure:has(figcaption) img {
-            width: 100%;
-            aspect-ratio: 16/9;
-        }
-    
-        figure:has(img) figcaption {
+        &_figcaption {
             margin-top: 2%;
         }
-        
-        figure:not(:has(figcaption)) img {
-            float: left;
-            width: 50%;
-            margin-right: 2%;
-        }
+    }
+    figure:has(figcaption) img {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
     
-        :where(p, li) > b {
-            color: orange;
-        }
+    figure:not(:has(figcaption)) img {
+        float: left;
+        width: 50%;
+        margin-right: 2%;
     }
 }
+
+
+
+
+
 

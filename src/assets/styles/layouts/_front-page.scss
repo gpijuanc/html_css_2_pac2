@@ -3,39 +3,37 @@
     flex-wrap: wrap;
     height: calc(100vh - 65px - 65px);
 
-    .grid-item__a { 
+    .grid__item-a { 
         width: 100%;
         max-height: 100vh;
     }
 
-    .grid-item__b { 
+    .grid__item-b { 
         position: absolute;
         align-self: center;
+        width: 100%;
         font-size: 60px;
         font-weight: bold;
-        width: 100%;
-        color: rgba(255, 255, 255, 0.5);
-        text-transform: uppercase;
+        color: $titol-portada;
         text-align: center;
+        text-transform: uppercase;
     }
 
-    .grid-item__c, .grid-item__d, .grid-item__e, .grid-item__f { 
+    .grid__item-c, .grid__item-d, .grid__item-e, .grid__item-f { 
         display: none;
      }
-
-  }
+}
 
 
 @supports (display: grid) {
     .grid {
         display: grid;
-        grid-template-areas: 'a b c'
-                             'd e f';
-        grid-template-columns: calc(100vw / 2) calc(100vw / 4) calc(100vw / 4);
+        grid-template-areas: 'a b c' 'd e f';
         grid-template-rows: calc(100vh / 2) calc(100vh / 2);
+        grid-template-columns: calc(100vw / 2) calc(100vw / 4) calc(100vw / 4);
         container-type: inline-size;
     
-        .grid-item__a { 
+        .grid__item-a { 
             grid-area: a;
             width: calc(100vw / 1.5);
             @container (max-width: 600px) {
@@ -44,56 +42,52 @@
             }
          }
     
-        .grid-item__b { 
-            grid-area: b;
+        .grid__item-b { 
             position: relative;
+            grid-area: b;
             width: calc(100vw / 2);
             @container (max-width: 600px) {
                 position: absolute;
                 align-self: center;
                 font-size: 30px;
                 font-weight: bold;
-                color: rgba(255, 255, 255, 0.5);
-                text-transform: uppercase;
+                color: $titol-portada;
                 text-align: center;
+                text-transform: uppercase;
             }
         }
     
-        .grid-item__c { 
-            grid-area: c;
+        .grid__item-c { 
             display: grid;
+            grid-area: c;
          }
     
-        .grid-item__d { 
-            grid-area: d;
+        .grid__item-d { 
             display: grid;
+            grid-area: d;
             align-content: center;
+            align-self: start;
             width: 30%;
             margin: 5%;
-            align-self: start;
-            @container (max-width: 600px) {
-                width: 100%;
-            }
+            @container (max-width: 600px) { width: 100%; }
         }
     
-        .grid-item__e { 
-            grid-area: e;
+        .grid__item-e { 
             display: grid;
+            grid-area: e;
+            align-self: center;
             height: fit-content;
             text-align: center;
-            align-self: center;
-            @container (max-width: 600px) {
-                width: calc(100vw / 2.1);
-            }
+            @container (max-width: 600px) { width: calc(100vw / 2.1); }
 
         }
     
-        .grid-item__f { 
-            grid-area: f;
+        .grid__item-f { 
             display: grid;
-            writing-mode: vertical-rl;
+            grid-area: f;
             align-content: start;
             color: $color-cinc;
+            writing-mode: vertical-rl;
          }
       } 
 }

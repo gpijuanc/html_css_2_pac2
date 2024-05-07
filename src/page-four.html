@@ -12,34 +12,37 @@
     <div class="page4 bg-light">
       <h2>Inscriu-te</h2>
       <form netlify>
-        <div class="form-group">
+        <div class="page4__form-group form-group">
           <label for="formControlInput1">Nom complet</label>
-          <input type="text" class="form-control" id="formControlInput1" placeholder="Joan Carbonell i Muntaner">
+          <input type="text" class="page4__input form-control" id="formControlInput1" placeholder="Joan Carbonell i Muntaner">
         </div>
-        <div class="form-group">
+        <div class="page4__form-group form-group">
           <label for="formControlInput2">Correu electrònic</label>
-          <input type="email" class="form-control" id="formControlInput2" placeholder="name@example.com">
+          <input type="email" class="page4__input form-control" id="formControlInput2" placeholder="name@example.com">
         </div>
-        <div class="form-group">
+        <div class="page4__form-group form-group">
           <label for="formControlSelect">Selecciona la teva provincia</label>
-          <select class="form-control" id="formControlSelect">
+          <select class="page4__select form-control" id="formControlSelect">
             <option>Barcelona</option>
             <option>Girona</option>
             <option>Lleida</option>
             <option>Tarragona</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="page4__form-group form-group">
           <label for="formControlTextarea">Descriu-te</label>
-          <textarea class="form-control" id="formControlTextarea" rows="3"></textarea>
+          <textarea class="page4__textarea form-control" id="formControlTextarea" rows="3"></textarea>
         </div>
         <hr>
-        <button type="submit" class="btn btn-warning">Submit</button>
+        <button type="submit" class="page4__button btn btn-warning">Submit</button>
       </form>
     </div>
     
     
     <include src="./views/footer.html"></include>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
 

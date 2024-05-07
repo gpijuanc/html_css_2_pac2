@@ -4,21 +4,20 @@
     &__div{
         display: flex;
         flex-wrap: wrap;
-        margin: 2rem;
-        margin-bottom: 65px;
-    
-        &__div {
-            flex: 1 1 30%;
-            padding: 1.5rem;
-            margin: 1%;
+        margin: 2rem 2rem 4.063rem;       
+    }
 
-            @container (max-width: 700px) {
-                flex: 1 1 35%;
-            }
+    &__card {
+        flex: 1 1 30%;
+        padding: 1.5rem;
+        margin: 1%;
 
-            @container (max-width: 500px) {
-                flex: 1 1 50%;
-            }
+        @container (max-width: 700px) {
+            flex: 1 1 35%;
+        }
+
+        @container (max-width: 500px) {
+            flex: 1 1 50%;
         }
     }
 }

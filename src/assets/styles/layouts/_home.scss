@@ -3,18 +3,12 @@
 }
 
 body {
-  // Box model
   display: flex;
   flex-direction: column;
   height: 100vh;
-  //padding: 2rem;
   margin: 0;
-
-  // Typography
   font-family: $font-family-sans-serif;
   line-height: 24px;
-
-  // Visual
   background-color: $color-principal;
 }
 
@@ -22,8 +16,4 @@ body {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
-}
-
-include{
-  margin: 2rem;
 }
