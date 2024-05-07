@@ -28,9 +28,10 @@
 @supports (display: grid) {
     .grid {
         display: grid;
-        grid-template-areas: 'a b c' 'd e f';
-        grid-template-rows: calc(100vh / 2) calc(100vh / 2);
-        grid-template-columns: calc(100vw / 2) calc(100vw / 4) calc(100vw / 4);
+        grid-template: 
+            'a b c' calc(100vh / 2)
+            'd e f' calc(100vh / 2) /
+            calc(100vw / 2) calc(100vw / 4) calc(100vw / 4);
         container-type: inline-size;
     
         .grid__item-a { 
